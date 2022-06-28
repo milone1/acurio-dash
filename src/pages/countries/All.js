@@ -56,7 +56,7 @@ const All = () => {
           </Grid>
           <Grid item md={3} sm={6} xs={12}>
             <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
+              <CardMedia            
                 component="img"
                 height="140"
                 image={iguana}
