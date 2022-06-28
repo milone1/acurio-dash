@@ -24,3 +24,15 @@ li {
 .container-tags {
   background-color: aliceblue;
 }
+
+.img {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}

@@ -1,28 +1,52 @@
+import { useState, useEffect } from 'react';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 import { Bar } from 'react-chartjs-2';
 
-const Sales = () => {
-    const data = {
-        labels: ['Peru', 'Bolivia', 'Argentina', 'Chile', 'España'],
-        datasets:[{
-                label: 'Habitantes',
-                backgroundColor: 'rgba(0,225,0,1)',
-                borderColor: 'black',
-                borderWidth:1,
-                hoverBackgroundColor: '#1c1c1c1c',
-                hoverBorderColor: '#ffffff80',
-                data: [325.25, 145.12, 25.1, 142.36, 458.25]
-        }]
-    };
-    const opciones = {
-        maintainAspectRatio: false,
-        responsive: true,
-    }
-    return(
-        <div style={{ width: '100%', height: '100vh'}}>
-            <h1>Sales</h1>
-            <Bar data = {data} options={opciones} />
-        </div>
-    );
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+function Sales() {
+  const [ chartData, setChartData ] = useState({datasets:[],});
+  
+  const [ chartOptions, setChartOptions ] = useState({datasets:[],}); 
+
+  useEffect(() => {
+    setChartData({
+      labels: ["Lima", "Peru", "Bolivia", "Chile", "España" ],
+      datasets:[
+        {
+          label: "Ventas en todo el Mundo:",
+          data: [12,55,34,120,450],
+          borderColor: "rgb(53,125,152)",
+          backgroundColor: "#1c1c1c"
+        },
+      ],
+    });
+    setChartOptions({
+      responsive: true,
+      plugins: {
+        legend: { 
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'VENTAS ECHAS EN LA SEMANA',
+        }
+      }
+    })
+  }, [])
+
+  return (
+    <div className="App" style={{width: '800px', heigth: '500px'}}>
+      <Bar options={chartOptions} data={chartData} />
+    </div>
+  );
 }
 
 export default Sales;
