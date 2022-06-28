@@ -3,18 +3,6 @@
   display: flex;
 }
 
-.ul-ecommerce {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.li-basket a {
-  color: #1f2937;
-  display: flex;
-  align-items: center;
-}
-
 .ul-tags {
   display: flex;
   justify-content: space-around;
@@ -29,22 +17,8 @@
   font-weight: 600;
 }
 
-.fresh {
-  background-color: #eb5757;
-  color: #fff;
-  padding: 3px;
-}
-
 li {
   list-style: none;
-}
-
-.badge-basket {
-  margin-top: 5px;
-  padding-top: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container-tags {
