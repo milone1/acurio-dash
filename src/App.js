@@ -1,17 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Router from './router';
 
 function App() {
   return (
     <div className="App">
-      <h2>asdasdad</h2>
-      <h2>asdasdad</h2>
-      <h2>asdasdad</h2>
-      <h2>asdasdad</h2>
-      <h2>asdasdad</h2> 
-      <h2>asdasdad</h2> 
-      <h2>asdasdad</h2> 
-      <h2>asdasdad</h2>
+      <Router />
     </div>
   );
 }
