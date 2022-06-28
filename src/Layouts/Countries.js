@@ -12,7 +12,7 @@ const Countries = () => {
       <div className="container-tags">
         <ul className="ul-tags">
           <li>
-            <a href="/">All</a>
+            <a href="/ecommerce">All</a>
           </li>
           <li>
             <Link to='/ecommerce/arequipa'>Arequipa</Link>
