@@ -3,32 +3,62 @@
   margin: 0;
 }
 
+body{
+	background-color: #f0f2f5;
+}
 
 $ligth: #FFFFFF;
+$gray_dark: #38383e;
 $dark: #1c1c1c;
+$gray: #71797e;
+$back:rgba(244, 244, 244, 0.8);
+$back_gradient: rgba(0,0,0, 0.2);
+$back_side: #F4F4F4;
+$back_button: #094293;
 
 .navBar {
-  background-color: $ligth;
+  overflow: hidden;
+  position: fixed;
+  background-color: $back_gradient;
   padding: 1rem 2rem;
-  border-bottom: 1px solid $dark;
+  border-bottom: 1px solid $back;
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.navBar:hover{
+	background-color: #38383e;
+	border-radius: 0;
+	color: #F4F4F4;
 }
 
 .flex {
   display: flex;
+  padding: 0;
 }
 
 .sideBar {
+  margin-top: 65px;
   width: 14rem;
   height: calc(100vh - 52px);
   border-right: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+  border-top: 1px solid $dark;
+  border-radius: 25px;
+  background-color: $gray_dark;
+  padding: 5px;
   ul{
     list-style: none;
     padding: 1rem 2rem;
     li{
+		color: #fff;
       margin-bottom: 1rem;
       a {
         text-decoration: none;
+		color: #fff;
       }
     }
   }
@@ -37,7 +67,6 @@ $dark: #1c1c1c;
 
 .card-container {
   height: 100vh;
-	background-color: rgba(22, 145, 156,0.3);
 	min-width: 350px;
 	max-width: 600px;
 	height: auto;
@@ -111,4 +140,8 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.button-prof {
+	width: 20px;
 }

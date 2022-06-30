@@ -1,7 +1,9 @@
 import iguana from "../../assets/iguana.jpg";
 import { Container, Grid, Button, Card, CardContent, CardMedia, Typography, CardActions } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CardArequipa = () => {
+  const imgTanta = "http://admin.tantaperu.com/wp-content/uploads/2019/09/tanta-fb.png";
   return (
     <>
       <Container maxWidth="xl">
@@ -12,12 +14,12 @@ const CardArequipa = () => {
               <CardMedia
                 component="img"
                 height="140"
-                image={iguana}
+                image={imgTanta}
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  Tanta
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -25,8 +27,7 @@ const CardArequipa = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>

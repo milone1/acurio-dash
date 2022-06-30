@@ -43,7 +43,7 @@ function Sales() {
   }, [])
 
   return (
-    <div className="App" style={{width: '800px', heigth: '500px'}}>
+    <div className="App" style={{width: '800px', heigth: '500px', marginTop: '120px', marginLeft:'150px'}}>
       <Bar options={chartOptions} data={chartData} />
     </div>
   );

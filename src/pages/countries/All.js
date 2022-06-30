@@ -1,9 +1,10 @@
-
-import iguana from "../../assets/iguana.jpg";
 import { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const All = () => {
-    const imagen1 = "https://static-sevilla.abc.es/media/gurmesevilla/2012/01/comida-rapida-casera.jpg";
+    const imgTanta = "http://admin.tantaperu.com/wp-content/uploads/2019/09/tanta-fb.png";
+    const manko = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm68LEoYLLvzUvT05ABXzrqI1QwU8N6HGWaw&usqp=CAU";
+    const yakumanka = "https://yakumanka.com/wp-content/uploads/2017/08/YAKUMANKA_logo.png";
   return (
     <>
       <Container maxWidth="xl">
@@ -13,12 +14,12 @@ const All = () => {
               <CardMedia
                 component="img"
                 height="140"
-                image={imagen1} 
+                image={imgTanta} 
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  Tanta
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -26,8 +27,7 @@ const All = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>
@@ -36,12 +36,12 @@ const All = () => {
               <CardMedia
                 component="img"
                 height="140"
-                image={iguana}
+                image={manko}
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  Manko
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -49,8 +49,7 @@ const All = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>
@@ -59,12 +58,12 @@ const All = () => {
               <CardMedia            
                 component="img"
                 height="140"
-                image={iguana}
+                image={yakumanka}
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  yakumanka
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -72,8 +71,7 @@ const All = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>

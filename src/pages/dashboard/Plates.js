@@ -1,25 +1,26 @@
 import {
-  Container,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  Grid,
-  Button,
-  Typography
-} from "@mui/material";
+	Container,
+	Table,
+	TableBody,
+	TableCell,
+	TableContainer,
+	TableHead,
+	TableRow,
+	Grid,
+	Button,
+	Typography
+  } from "@mui/material";
+import React from "react";
+import CloseIcon from '@mui/icons-material/Close';
 
-//* import icons
 import ModeEditOutlineRoundedIcon from '@mui/icons-material/ModeEditOutlineRounded';
 import HighlightOffRoundedIcon from '@mui/icons-material/HighlightOffRounded';
 
-const Clients = () => {
 
-  return (
-    <Container sx={{ boxShadow: "60px -16px teal"}} maxWidth={'1200px'}>
+const Plates = () => {
+	const imgCard = "https://www.trendtic.cl/wp-content/uploads/2018/05/003-Rub%C3%A9n-Belluomo-INFOR-2018.jpg";
+	return (
+		<Container sx={{ boxShadow: "60px -16px teal"}} maxWidth={'1200px'}>
       <Grid container spacing={3} mt={5} >
         <Grid item md={12} alignItems='center'>
           <center>
@@ -233,7 +234,7 @@ const Clients = () => {
         </Table>
       </TableContainer>
     </Container>
-  );
-};
+	);
+}
 
-export default Clients;
+export default Plates;

@@ -7,7 +7,7 @@ const Countries = () => {
   return (
     <div>
       <nav className="nav-ecommerce">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="/" height={100} width={100}/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROi7yFlzIEcqneY1_PeRAjaQQ2iXlE2y0ZmQ&usqp=CAU" alt="/" height={100} width={700}/>
       </nav>
       <div className="container-tags">
         <ul className="ul-tags">

@@ -1,9 +1,9 @@
 import { Container, Grid, Button, Card, CardContent, CardMedia, Typography, CardActions } from "@mui/material";
-
-import iguana from "../../assets/iguana.jpg";
+import { Link } from "react-router-dom";
 
 const CardBarcelona = () => {
-    const imagen1 = "https://static-sevilla.abc.es/media/gurmesevilla/2012/01/comida-rapida-casera.jpg";
+  const manko = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm68LEoYLLvzUvT05ABXzrqI1QwU8N6HGWaw&usqp=CAU";
+  const yakumanka = "https://yakumanka.com/wp-content/uploads/2017/08/YAKUMANKA_logo.png";
   return (
     <>
       <Container maxWidth="xl">
@@ -14,12 +14,12 @@ const CardBarcelona = () => {
               <CardMedia
                 component="img"
                 height="140"
-                image={imagen1}
+                image={manko}
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  manco
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -27,8 +27,7 @@ const CardBarcelona = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>
@@ -37,12 +36,12 @@ const CardBarcelona = () => {
               <CardMedia
                 component="img"
                 height="140"
-                image={iguana}
+                image={yakumanka}
                 alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  yakumanka
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
@@ -50,8 +49,7 @@ const CardBarcelona = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Link to="/dashboard">Editar</Link></Button>
               </CardActions>
             </Card>
           </Grid>

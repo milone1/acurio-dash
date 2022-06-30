@@ -13,8 +13,7 @@ import CardBarcelona from "../pages/countries/Barcelona";
 
 //* import components to dashboard
 import Dashboard from "../Layouts/Dashboard";
-import Clients from "../pages/dashboard/Clients";
-import Profile from "../pages/dashboard/Profile";
+import Plates from "../pages/dashboard/Plates";
 import Sales from "../pages/dashboard/Sales";
 
 const Router = () => {
@@ -29,9 +28,9 @@ const Router = () => {
         </Route>
 
         <Route  element={<Dashboard />}>
-            <Route path="/dashboard" element={<Profile />} />
+            <Route path="/dashboard" element={<Plates />} />
             <Route path="/dashboard/ventas" element={<Sales />} />
-            <Route path="/dashboard/clientes" element={<Clients />} />
+            <Route path="/dashboard/plates" element={<Plates />} />
         </Route>
       </Routes>
     </BrowserRouter>
