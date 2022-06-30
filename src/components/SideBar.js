@@ -12,7 +12,7 @@ const SideBar = () => {
             <ul>
                 <li className="container-links">
                     <FastfoodIcon />
-                    <Link to="dashboard" underline="none">Platos</Link>
+                    <Link to="dashboard/platos" underline="none">Platos</Link>
                 </li>
                 <li className="container-links">
                     <PeopleIcon />

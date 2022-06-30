@@ -42,7 +42,7 @@ $back_button: #094293;
 
 .sideBar {
   margin-top: 65px;
-  width: 14rem;
+  width: 190px;
   height: calc(100vh - 52px);
   border-right: 1px solid $dark;
   border-bottom: 1px solid $dark;
@@ -144,4 +144,43 @@ header {
 
 .button-prof {
 	width: 20px;
+}
+
+.gap {
+	padding: 15px;
+}
+
+.button-t {
+	height: 50px;
+	width: 50px;
+}
+
+.color {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+.alinear {
+	align-items: center;
+	padding-top: 14px;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: #f0f2f5;
+	border: 2px solid blue;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.spacer {
+	justify-content: space-between;
+	align-items: center;
+	
 }

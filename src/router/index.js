@@ -15,6 +15,9 @@ import CardBarcelona from "../pages/countries/Barcelona";
 import Dashboard from "../Layouts/Dashboard";
 import Plates from "../pages/dashboard/Plates";
 import Sales from "../pages/dashboard/Sales";
+import Clients from "../pages/dashboard/Clients";
+import Tables from "../pages/dashboard/Tables";
+import Users from "../pages/dashboard/Users";
 
 const Router = () => {
   return (
@@ -28,9 +31,12 @@ const Router = () => {
         </Route>
 
         <Route  element={<Dashboard />}>
-            <Route path="/dashboard" element={<Plates />} />
+            <Route path="/dashboard/platos" element={<Plates />} />
+            <Route path="/dashboard/clientes" element={<Clients />} />
+            <Route path="/dashboard/mesas" element={<Tables />} />
+            <Route path="/dashboard/usuarios" element={<Users />} />
             <Route path="/dashboard/ventas" element={<Sales />} />
-            <Route path="/dashboard/plates" element={<Plates />} />
+            <Route path="/dashboard/pl" element={<Plates />} />
         </Route>
       </Routes>
     </BrowserRouter>
